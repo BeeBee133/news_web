@@ -1,0 +1,114 @@
+/* location_shower */
+
+.location-shower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    padding-bottom: 10px;
+}
+
+
+/* section */
+
+section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 35px;
+}
+
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 45px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-card {
+    background-color: white;
+    padding: 45px 30px;
+    text-align: center;
+    box-shadow: 0px -1px 19px 0px rgb(117 79 79 / 10%), 1px 0px 5px rgb(234 234 234 / 8%);
+}
+
+
+/* Image Styling */
+
+.social-card .image-placeholder {
+    width: 206px;
+    height: 150px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.social-card h3 {
+    margin: 10px 0;
+}
+
+.social-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin-top: 26px;
+}
+
+.social-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.social-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    .social-media-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .social-media-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 25px;
+    }
+    .social-card {
+        padding: 30px 20px;
+    }
+    .social-card .image-placeholder {
+        width: 180px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-media-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .social-card {
+        padding: 20px 15px;
+    }
+    .social-card .image-placeholder {
+        width: 160px;
+        height: 120px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    section h2 {
+        margin-bottom: 20px;
+    }
+}

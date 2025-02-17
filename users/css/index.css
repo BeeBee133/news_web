@@ -1,0 +1,496 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Location-shower */
+
+.location-shower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    padding-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+
+/* Operations */
+
+.operation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.operation-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.operation-container label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.operation-container select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+    width: 190px;
+}
+
+.operation-search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 40px;
+}
+
+.operation-search-box input {
+    padding: 8px 12px;
+    border: 1px solid #0056b3;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.operation-search-box button {
+    position: absolute;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.operation-search-box button i {
+    font-size: 1.2rem;
+}
+
+.search-now-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-now-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Services */
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 76px;
+    row-gap: 43px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 50px 20px;
+    padding-top: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.service-box p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .operation-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .operation-container select,
+    .operation-search-box input {
+        width: 100%;
+    }
+    .search-now-btn {
+        width: 100%;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-box {
+        width: 100%;
+    }
+    .teen-brain-content {
+        flex-direction: column;
+    }
+}
+
+
+/* How Parent Help Section */
+
+.how-parents-can-help {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+}
+
+.parent-help-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parent-help-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.parent-help-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.parent-help-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.parent-help-box p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .parent-help-grid {
+        grid-template-columns: 1fr;
+    }
+    .parent-help-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .parent-help-box img {
+        margin: 0 0 20px;
+    }
+}
+
+
+/* How Parents Can Help Articles */
+
+.howParentsSections {
+    margin: 0 auto;
+    margin: 40px 13%;
+    line-height: 1.5;
+}
+
+.article {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.article img {
+    width: 350px;
+    height: 270px;
+    background-color: #ccc;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.article.even img {
+    float: left;
+    margin-right: 20px;
+}
+
+.article.odd img {
+    float: right;
+    margin-left: 20px;
+}
+
+.article p {
+    margin: 0px 17px;
+    text-align: justify;
+    margin-top: 38px;
+}
+
+.article h2 {
+    font-weight: bold;
+    text-align: left;
+    clear: both;
+    margin: 20px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .article {
+        text-align: center;
+    }
+    .article img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px;
+    }
+    .article p {
+        margin: 20px;
+    }
+}
+
+
+/* Tips Section */
+
+.tips-section {
+    line-height: 1.6;
+}
+
+.tips-section ul {
+    list-style-type: disc;
+    margin: 0;
+    text-align: left;
+}
+
+.tips-section li {
+    line-height: 1.6;
+    margin: 10px 14%;
+    text-align: justify;
+}
+
+.tips-section h1 {
+    margin-left: 14%;
+}
+
+.tips-section img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .tips-section li {
+        margin: 10px 5%;
+    }
+    .tips-section img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Subscribe Plan */
+
+.subscribe-plan {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subscribe-plan h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.plan-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.plan-box ul li {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.plan-box .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plan-box.unsubscribe .price {
+    color: #000;
+}
+
+.plan-box.subscribe .price {
+    color: #007bff;
+}
+
+.plan-box .subscribe-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.plan-box .subscribe-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Teen Brain Section */
+
+.teen-brain-section {
+    margin: 50px 0;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.teen-brain-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.teen-brain-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.teen-brain-image img {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.teen-brain-text {
+    text-align: left;
+}
+
+.teen-brain-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.teen-brain-text li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .teen-brain-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .teen-brain-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .teen-brain-text ul {
+        padding-left: 0;
+    }
+}

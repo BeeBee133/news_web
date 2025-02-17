@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002855;
+    color: white;
+    padding: 22px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo span {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .admin {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header .admin span {
+    margin-left: 10px;
+}

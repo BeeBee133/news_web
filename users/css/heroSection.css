@@ -1,0 +1,78 @@
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #55C1FF;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        
+        .hero-section .content {
+            max-width: 50%;
+        }
+        
+        .heroTitle {
+            margin-bottom: 20px;
+        }
+        
+        .hero-section .content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #ffffff;
+            text-align: left;
+        }
+        
+        .hero-section .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #f1f1f1;
+        }
+        
+        .hero-section .buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .hero-section .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        
+        .hero-section .buttons .btn-primary {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #000;
+        }
+        
+        .hero-section .buttons .btn-primary:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .hero-section .buttons .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+        }
+        
+        .hero-section .buttons .btn-secondary:hover {
+            background-color: #fff;
+            color: #55C1FF;
+        }
+        
+        .hero-section .illustration {
+            max-width: 40%;
+            margin-top: 45px;
+        }
+        
+        .hero-section .illustration img {
+            width: 68%;
+            height: auto;
+            margin-top: 10px;
+            margin-left: 78px;
+        }

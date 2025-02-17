@@ -1,0 +1,192 @@
+/* Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+/* Logo Section */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Center navigation links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+
+/* Search box on the right */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #007BFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #007BFF;
+    font-size: 1rem;
+}
+
+
+/* Hamburger Menu */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+
+/* For responsiveness */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Hide links on smaller screens */
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex;
+    }
+    /* Search box adjustment for mobile */
+    .search-box {
+        width: 60%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .search-box input {
+        width: 80%;
+    }
+}
+
+
+/* Hero section styles remain as is */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #55C1FF;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-section .content {
+    max-width: 50%;
+}
+
+.hero-section .content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hero-section .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+.hero-section .buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-section .illustration img {
+    max-width: 40%;
+}
